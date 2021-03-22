@@ -10,7 +10,7 @@ const userAdd=({id,user,room})=>
         return {error:"Please mention all field"}
     }
     const findmatch=userList.find((userIt)=>{
-        return userIt.name==user  && id==userIt.id
+        return userIt.user==user && room==userIt.room
     })
 
     if(findmatch)
